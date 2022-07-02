@@ -9,20 +9,6 @@
     margin: 0 auto;
 }
 
-.logo {
-    border-right: 2px solid #E6E8EC;
-    display: flex;
-}
-
-.logo img {
-    margin-right: 8px;
-}
-
-.logo h1 {
-    margin-right: 32px;
-    font-size: 24px;
-}
-
 .navLink {
     text-decoration: none;
     font-weight: 700;
