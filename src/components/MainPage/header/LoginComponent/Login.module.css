@@ -1,0 +1,14 @@
+.loginBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 40px;
+    border: 2px solid #E6E8EC;
+    border-radius: 90px;
+    background: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    color: #23262F;
+    cursor: pointer;
+}

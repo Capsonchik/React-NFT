@@ -3,6 +3,7 @@ import logo from '../../Images/symbol.png'
 import search from '../../Images/Shape.png'
 import bell from '../../Images/Bell.png'
 import { Link } from "react-router-dom";
+import Login from './LoginComponent/Login.jsx'
 
 
 const Header = () => {
@@ -25,8 +26,7 @@ const Header = () => {
                 </div>
                 <img src={bell} alt="bell"/>
                 <button className={s.uploadButton}>Загрузить</button>
-                <button className={s.uploadWallet}>Добавить кошелек</button>
-
+                <Login/>
             </div>
         </header>
     )
