@@ -1,5 +1,5 @@
 .container {
-    width: 1120px;
+    max-width: 1120px;
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
@@ -77,7 +77,7 @@
 }
 
 .uploadWallet {
-    width: 135px;
+    width: 145px;
     height: 40px;
     border: 2px solid #E6E8EC;
     border-radius: 90px;
