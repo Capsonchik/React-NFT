@@ -1,5 +1,4 @@
 import s from './Header.module.css'
-import logo from '../../Images/symbol.png'
 import search from '../../Images/Shape.png'
 import bell from '../../Images/Bell.png'
 import { Link } from "react-router-dom";

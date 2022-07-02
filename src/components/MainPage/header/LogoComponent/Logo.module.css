@@ -1,10 +1,12 @@
 .logo {
-    border-right: 2px solid #E6E8EC;
+    /* border-right: 2px solid #E6E8EC; */
     display: flex;
 }
 
 .logo img {
     margin-right: 8px;
+    width: 32px;
+    height: 32px;
 }
 
 .logo h1 {
