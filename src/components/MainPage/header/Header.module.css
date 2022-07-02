@@ -68,7 +68,6 @@
     width: 80px;
     height: 40px;
     border: 0;
-    /* border: 2px solid #E6E8EC; */
     border-radius: 90px;
     background: #3772FF;
     font-weight: 500;
@@ -76,14 +75,4 @@
     color: #FCFCFD;
 }
 
-.uploadWallet {
-    width: 145px;
-    height: 40px;
-    border: 2px solid #E6E8EC;
-    border-radius: 90px;
-    background: inherit;
-    font-weight: 500;
-    font-size: 12px;
-    color: #23262F;
-}
 
