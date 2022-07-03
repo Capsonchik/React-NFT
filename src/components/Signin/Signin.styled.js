@@ -1,3 +1,8 @@
+import styled from 'styled-components'
+
+// const styledButton = styled(styledComponent)` `
+
+const StyledSignin = styled.div `
 .popup {
   position: fixed;
   width: 100%;
@@ -11,14 +16,13 @@
   justify-content: center;
   align-items: center;
   transition: visibility 0.5s, opacity 0.5s linear;
-}
 
-.popup_opened {
+&_opened {
   opacity: 1;
   visibility: visible;
 }
 
-.popup__container {
+&__container {
   width: 448px;
   border-radius: 20px;
   background-color: #FCFCFD;
@@ -27,7 +31,7 @@
   position: relative;
 }
 
-.popup__title {
+&__title {
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
@@ -37,21 +41,22 @@
   margin-bottom: 30px;
 }
 
-.popup__cross {
-  width: 14px;
-  height: 14px;
+&__cross {
+  width: 17px;
+  height: 17px;
   position: absolute;
   right: 55px;
   top: 45px;
   cursor: pointer;
+  transition: opacity .3s linear;
 }
 
-.popup__cross:hover {
-  opacity: 1;
+&__cross:hover {
+  opacity: 0.7;
 }
 
-.popup__cross:before,
-.popup__cross:after {
+&__cross:before,
+&__cross:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -60,22 +65,22 @@
   background-color: #23262F;
 }
 
-.popup__cross:before {
+&__cross:before {
   transform: rotate(45deg);
 }
 
-.popup__cross:after {
+&__cross:after {
   transform: rotate(-45deg);
 }
 
-.popup__form {
+&__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
 
-.popup__input {
+&__input {
   margin: 0;
   padding: 0;
   padding-bottom: 3px;
@@ -91,7 +96,7 @@
   background-color: #fff;
 }
 
-.popup__submit {
+&__submit {
   width: 384px;
   height: 48px;
   color: #EF466F;
@@ -104,8 +109,27 @@
   font-size: 16px;
   line-height: 16px;
   margin-top: 30px;
+  transition: transform .5s;
 }
 
-.popup__link {
-
+&__submit:hover {
+  transform: scale(1.02);
 }
+
+&__link {
+text-decoration: none;
+margin-bottom: 20px;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #777E91;
+transition: color .3s linear;
+}
+
+&__link:hover {
+  color: #23262F;
+}
+}
+`
+
+export default StyledSignin
