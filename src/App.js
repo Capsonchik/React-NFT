@@ -1,14 +1,17 @@
-import { Routes, Route } from "react-router-dom";
-import MainPage from './components/MainPage/MainPage'
+import { Outlet } from "react-router-dom";
+import Footer from "./components/MainPage/footer/Footer";
+import Header from "./components/MainPage/header/Header";
+
+// ШАБЛОН СТРАНИЦЫ
 
 function App() {
   return (
     <div className="App">
-        <Routes>
-          <Route path="/" element={<MainPage />} />   
-        </Routes>
-        {/* <MainPage/> */}
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
+  
   );
 }
 

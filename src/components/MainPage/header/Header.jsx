@@ -16,7 +16,7 @@ const Header = () => {
                     <Link className={s.navLink} to='/'>Как это работает</Link>
                 </nav>
                 <div className={s.headerInput}>
-                    <input class={s.headerSearch} type="text" placeholder='Поиск'/>
+                    <input className={s.headerSearch} type="text" placeholder='Поиск'/>
                     <button className={s.searchButton} type='submit'>
                         <img src={search} alt="search"/>
                     </button>

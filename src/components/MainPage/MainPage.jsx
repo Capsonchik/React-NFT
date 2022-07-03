@@ -1,12 +1,9 @@
-import Header from './header/Header.jsx'
-import Footer from './footer/Footer.jsx'
+
 
 const MainPage = () => {
     return(
         <div>
-            <Header />
-            <Footer />
-            
+            {/* Здесь контент главной страницы */}
         </div>
     )
 }
