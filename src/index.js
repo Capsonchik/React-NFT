@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Routes, Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
+import MainPage from './components/MainPage/MainPage';
+import { ProfilePage } from './components/ProfilePage/ProfilePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
-          <App />
+        <Routes>
+            <Route path='/' element={<App />} >  {/*Это будет шаблонная страничка с хедером и футером */}
+              <Route path='/' element={<MainPage />} />
+              <Route path='/profile' element={<ProfilePage />} />
+            </Route>
+          </Routes>
       </BrowserRouter>
   </React.StrictMode>
 );
