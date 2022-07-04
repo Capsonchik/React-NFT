@@ -7,16 +7,18 @@ import {Routes, Route} from "react-router-dom";
 import {BrowserRouter} from "react-router-dom";
 import MainPage from './components/MainPage/MainPage';
 import Signin from './components/Signin/Signin';
+import { ProfilePage } from './components/ProfilePage/ProfilePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={< App />}>
+        <Route path='/' element={<App />}>
           {/*Это будет шаблонная страничка с хедером и футером */}
-          <Route path='/' element={< MainPage />}/>
-          <Route path='/signin' element={< Signin />}/>
+          <Route path='/' element={<MainPage />}/>
+          <Route path='/signin' element={<Signin />}/>
+          <Route path='/profile' element={<ProfilePage />}/>
         </Route>
       </Routes>
     </BrowserRouter>

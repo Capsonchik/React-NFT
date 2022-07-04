@@ -1,4 +1,4 @@
-import EconomyBlock from '../EconomyBlock/EconomyBlock.jsx'
+import EconomyBlock from "../EconomyBlock/EconomyBlock";
 
 const MainPage = () => {
     return(
