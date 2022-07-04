@@ -53,8 +53,8 @@ h3 {
     height: 40px;
     border: 2px solid #E6E8EC;
     border-radius: 90px 0px 0px 90px;
-    border-right: none; 
-    padding-left: 10px;   
+    border-right: none;
+    padding-left: 10px;
 }
 
 .footerInput input::placeholder {
