@@ -1,4 +1,4 @@
-import s from './footer.module.css'
+import s from './Footer.module.css'
 import { Link } from "react-router-dom";
 import Logo from '../header/LogoComponent/Logo.jsx'
 import circle from '../../Images/footer-button.png'
