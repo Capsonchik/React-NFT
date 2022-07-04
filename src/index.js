@@ -7,6 +7,7 @@ import {Routes, Route} from "react-router-dom";
 import {BrowserRouter} from "react-router-dom";
 import MainPage from './components/MainPage/MainPage';
 import Signin from './components/Signin/Signin';
+import Signup from './components/Signup/Signup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
           {/*Это будет шаблонная страничка с хедером и футером */}
           <Route path='/' element={< MainPage />}/>
           <Route path='/signin' element={< Signin />}/>
+          <Route path='/signup' element={< Signup />}/>
         </Route>
       </Routes>
     </BrowserRouter>

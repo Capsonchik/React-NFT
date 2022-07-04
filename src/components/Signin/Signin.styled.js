@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-// const styledButton = styled(styledComponent)` `
-
 const StyledSignin = styled.div `
 .popup {
   position: fixed;
@@ -10,17 +8,10 @@ const StyledSignin = styled.div `
   background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
-  visibility: hidden;
-  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: visibility 0.5s, opacity 0.5s linear;
-
-&_opened {
-  opacity: 1;
-  visibility: visible;
-}
 
 &__container {
   width: 448px;
@@ -81,8 +72,6 @@ const StyledSignin = styled.div `
 }
 
 &__input {
-  margin: 0;
-  padding: 0;
   padding-bottom: 3px;
   padding-left: 15px;
   box-sizing: border-box;
@@ -93,7 +82,6 @@ const StyledSignin = styled.div `
   line-height: 17px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 25px;
-  background-color: #fff;
 }
 
 &__submit {
@@ -117,13 +105,13 @@ const StyledSignin = styled.div `
 }
 
 &__link {
-text-decoration: none;
-margin-bottom: 20px;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color: #777E91;
-transition: color .3s linear;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777E91;
+  transition: color .3s linear;
 }
 
 &__link:hover {
