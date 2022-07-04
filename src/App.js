@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Footer from "./components/MainPage/Footer/Footer";
+import Footer from "./components/MainPage/footer/Footer";
 import Header from "./components/MainPage/header/Header";
 
 // ШАБЛОН СТРАНИЦЫ
