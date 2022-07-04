@@ -1,0 +1,37 @@
+.EconomyBlock {
+    padding-top: 128px;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    color: #777E91;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.EconomyButton {
+    width: 180px;
+    height: 48px;
+    border: 2px solid #E6E8EC;
+    border-radius: 90px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #23262F;
+    background-color: inherit;
+}
