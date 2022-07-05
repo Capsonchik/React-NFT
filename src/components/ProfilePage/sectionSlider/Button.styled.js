@@ -17,4 +17,5 @@ export const Button = styled.button`
     }
 `
 
-export const EditButton = styled(Button)``
+export const EditButton = styled(Button)`
+    margin-left: 17px;`

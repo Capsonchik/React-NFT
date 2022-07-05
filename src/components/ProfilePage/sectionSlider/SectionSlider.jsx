@@ -14,18 +14,16 @@ export const SectionSlider = () => {
             <WrapperButton>
             <Container>
                 <FlexBtn>
-                <div className='button-wrapper'>
                     <Button>Edit cover photo
                         <img className='button-img' src={buttonSvg} alt="gallery" />
                         <img className='button-img__frame' src={frame} alt="frame" />
                     </Button>
-                </div>
-                <div className='button-wrapper__edit'>
+          
                     <EditButton>Edit profile 
                         <img className='button-img' src={buttonSvgEdit} alt="pencil" />
                         <img className='button-img__shape' src={shape} alt="shape" />
                     </EditButton>
-                </div>
+          
                 </FlexBtn>
                 </Container>
             </WrapperButton>
