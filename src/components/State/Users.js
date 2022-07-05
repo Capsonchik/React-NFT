@@ -1,28 +1,31 @@
+import Photo1 from './01.png'
+
 export const Users = [
     {
         "id": 1,
+        "photo": './01.png',
         "name": "Edd Harrys",
-        "balance": 2.45
+        "balance": 27.45
     },
     {
         "id": 2,
-        "name": "Edd Harrys",
-        "balance": 3.45
+        "name": "Odell Hane",
+        "balance": 3.22
     },
     {
         "id": 3,
-        "name": "Edd Harrys",
-        "balance": 4.45
+        "name": "Marlee Kuphal",
+        "balance": 8.41
     },
     {
         "id": 4,
-        "name": "Edd Harrys",
-        "balance": 5.45
+        "name": "Payton Kunde",
+        "balance": 100.94
     },
     {
         "id": 5,
-        "name": "Edd Harrys",
-        "balance": 6.45
+        "name": "Payton Buckridge",
+        "balance": 35.67
     },
     {
         "id": 6,
