@@ -5,8 +5,8 @@ const MainPage = () => {
     return(
         <div>
             {/* Здесь контент главной страницы */}
-            <PopularSellers/>
             <EconomyBlock/>
+            <PopularSellers/>
         </div>
     )
 }

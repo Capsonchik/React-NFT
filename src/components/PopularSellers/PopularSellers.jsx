@@ -6,7 +6,13 @@ const PopularSellers = () => {
         <PopularSellersBlock>
             <div className='section-wrapper'>
                 <Container>
+                    <div className='popularSellers__header'>
 
+                    </div>
+                    <div className='popularSellers__slider'>
+                        <div className='prev-arrow'></div>
+                        <div className='next-arrow'></div>
+                    </div>                                           
                 </Container>
             </div>
         </PopularSellersBlock>
