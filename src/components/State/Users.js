@@ -3,7 +3,7 @@ import Photo1 from './01.png'
 export const Users = [
     {
         "id": 1,
-        "photo": './01.png',
+        "photo": 'https://via.placeholder.com/32.png/09f/fff',
         "name": "Edd Harrys",
         "balance": 27.45
     },

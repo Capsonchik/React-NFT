@@ -36,6 +36,12 @@ export const SellersBlock = styled.div`
         color: #FCFCFD;
     }
 
+    .user__photo {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+
     .user__name {
         text-align: center;
         font-weight: 500;

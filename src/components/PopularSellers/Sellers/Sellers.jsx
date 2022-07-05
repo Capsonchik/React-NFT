@@ -19,7 +19,7 @@ const Sellers = () => {
                         <img src={InviteButton} alt="inviteButton" />
                     </div>
                 </div>
-                <img src={el.photo} alt='photo'/>
+                <img className='user__photo' src={el.photo} alt='photo'/>
                 <p className='user__name'>{el.name}</p>
                 <p className='user__balanse'>{el.balance} <span className='user__balanse-currensy'>ETH</span></p>
             </div>
