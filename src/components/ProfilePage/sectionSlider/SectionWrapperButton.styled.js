@@ -1,18 +1,11 @@
 import styled from 'styled-components'
+import {Flex} from '../../GlobalStyles/Global.styled'
 
 export const WrapperButton = styled.div`
     
     .button-wrapper {
-        position: absolute;
-        top: 250px;
-        right: 320px;
-
-        &__edit {
-            position: absolute;
-            top: 250px;
-            right: 171px;
-            display: flex;
-        }
+        padding-right: 17px;
+       
     }
 
     .button-img {
@@ -20,20 +13,20 @@ export const WrapperButton = styled.div`
     }
 
     .button-img__shape {
-        position: absolute;
-        top: 28px;
-        right: 19px;
+        margin-left: -12px;
+        margin-bottom: -2px;
     }
 
     .button-img__frame {
-        position: absolute;
-        top: 15px;
-        right: 17px;
+        margin-left: -13px;
+        margin-bottom: -2px;
     } 
 
-    
+`
 
-
-
-    
+export const FlexBtn = styled(Flex)`
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 23px;
+    height: 320px;
 `
