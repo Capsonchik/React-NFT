@@ -40,6 +40,7 @@ export const SellersBlock = styled.div`
         width: 64px;
         height: 64px;
         border-radius: 50%;
+        margin: 0 auto;
     }
 
     .user__name {
