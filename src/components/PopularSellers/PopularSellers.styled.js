@@ -15,6 +15,18 @@ export const PopularSellersBlock = styled.section`
     .popular-sellers__slider-block {
         display: flex;
         width: 100%;
+        overflow: hidden;
+    }
+
+    .arrow {
+        width: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .next-arrow img {
+        transform: rotate(180deg);
     }
 
 `

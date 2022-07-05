@@ -14,14 +14,15 @@ const PopularSellers = () => {
 
                     </div>
                     <div className='popular-sellers__slider'>
-                        <div className='prev-arrow'>
+                        <div className='arrow prev-arrow'>
                             <img src={PrevArrow} alt="prev-arrov" />
                         </div>
                         <div className='popular-sellers__slider-block'>
                             <Sellers/>
                         </div>
-                        <div className='next-arrow'>
-                            <img src={NextArrow} alt="next-arrov" />
+                        <div className='arrow next-arrow'>
+                            <img src={PrevArrow} alt="prev-arrov" />
+                            {/* <img src={NextArrow} alt="next-arrov" /> */}
                         </div>
                     </div>                                           
                 </Container>

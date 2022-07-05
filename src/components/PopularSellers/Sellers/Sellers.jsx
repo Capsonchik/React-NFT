@@ -1,13 +1,26 @@
 import { SellersBlock } from "./Sellers.styled";
 import { Users } from "../../State/Users";
+import AddButton from './Images/Add.png';
+import InviteButton from './Images/OpenArrow.png'
 
 const Sellers = () => {
 
     const MapUsers = Users.map(el => {
         return(
             <div className='user'>
-                {el.id}
-                {el.name}
+                <div className='user__top'>
+                    <div className='user__top-achivments'>
+                        #{el.id}
+                    </div>
+                    <div className='user__top-invite'>
+                        <img src={AddButton} alt="addbutton" />
+                    </div>
+                    <div className='user__top-open'>
+                        <img src={InviteButton} alt="inviteButton" />
+                    </div>
+                </div>
+                <p className='user__name'>{el.name}</p>
+                <p className='user__balanse'>{el.balance} <span className='user__balanse-currensy'>ETH</span></p>
             </div>
         )
     })
