@@ -18,6 +18,12 @@ export const PopularSellersBlock = styled.section`
         overflow: hidden;
     }
 
+    .slider-wrapper {
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+
     .arrow {
         width: 5%;
         display: flex;

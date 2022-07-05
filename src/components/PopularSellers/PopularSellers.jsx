@@ -3,9 +3,31 @@ import { Container } from "../GlobalStyle/Styled.Global";
 import PrevArrow from './Images/PrevArrow.png'
 import NextArrow from './Images/NextArrov.png'
 import Sellers from "./Sellers/Sellers.jsx";
+import { useState } from "react";
 
 
 const PopularSellers = () => {
+
+const [offset, setOffset] = useState(232)
+
+    const swipeSlideRight  = () => {        
+        const sliderBlock = document.querySelector('.slider-wrapper')
+        setOffset(offset + 232)
+        sliderBlock.style.left = -offset +  'px'
+        if(offset > 695) {
+            setOffset(0)
+        }
+    }
+
+    const swipeSlideLeft  = () => {        
+        const sliderBlock = document.querySelector('.slider-wrapper')
+        setOffset(offset + 232)
+        sliderBlock.style.left = offset +  'px'
+        if(offset > 695) {
+            setOffset(0)
+        }
+    }
+    
     return ( 
         <PopularSellersBlock>
             <div className='section-wrapper'>
@@ -14,13 +36,16 @@ const PopularSellers = () => {
 
                     </div>
                     <div className='popular-sellers__slider'>
-                        <div className='arrow prev-arrow'>
+                        <div onClick={swipeSlideLeft} className='arrow prev-arrow'>
                             <img src={PrevArrow} alt="prev-arrov" />
                         </div>
                         <div className='popular-sellers__slider-block'>
+                            <div className='slider-wrapper'>
                             <Sellers/>
+                            </div>
+                            
                         </div>
-                        <div className='arrow next-arrow'>
+                        <div onClick={swipeSlideRight} className='arrow next-arrow'>
                             <img src={PrevArrow} alt="prev-arrov" />
                             {/* <img src={NextArrow} alt="next-arrov" /> */}
                         </div>

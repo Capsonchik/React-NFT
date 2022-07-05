@@ -7,7 +7,7 @@ const Sellers = () => {
 
     const MapUsers = Users.map(el => {
         return(
-            <div className='user'>
+            <div key={el.id} className='user'>
                 <div className='user__top'>
                     <div className='user__top-achivments'>
                         #{el.id}
