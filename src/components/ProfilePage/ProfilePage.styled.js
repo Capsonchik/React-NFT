@@ -6,5 +6,6 @@ export const StyledProfilePage = styled.div`
       background-image: url(${ Background });
       background-repeat: no-repeat;
       background-size: 100%;
-      height: 350px;
+      background-position: top;
+      
 `

@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import {Flex} from '../../GlobalStyles/Global.styled'
 
 export const WrapperButton = styled.div`
-     
     .button-img {
         padding-left: 12px;
 
