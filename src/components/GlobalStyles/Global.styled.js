@@ -1,6 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+
+export const Container = styled.div`
+    margin: 0 auto;
+    max-width: 1120px;
+`
 
 
+export const Flex = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+`
 export const Button = styled.button`
     padding: 12px 16px;
     font-weight: 700;
@@ -12,10 +23,4 @@ export const Button = styled.button`
     background: transparent;
     color: white;
 
-    .button-text {
-        padding-right: 3px;
-    }
 `
-
-export const EditButton = styled(Button)`
-    margin-left: 17px;`
