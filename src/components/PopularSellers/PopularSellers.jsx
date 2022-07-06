@@ -21,9 +21,9 @@ const [offset, setOffset] = useState(232)
 
     const swipeSlideLeft  = () => {        
         const sliderBlock = document.querySelector('.slider-wrapper')
-        setOffset(offset + 232)
+        setOffset(offset - 232)
         sliderBlock.style.left = offset +  'px'
-        if(offset > 695) {
+        if(offset < -695) {
             setOffset(0)
         }
     }
