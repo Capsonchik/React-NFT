@@ -10,23 +10,22 @@ import { FlexBtn } from '../sectionSlider/SectionWrapperButton.styled'
 
 export const SectionSlider = () => {
     return(
-        <div className='section-wrapper'>
-            <WrapperButton>
+        <WrapperButton>
             <Container>
                 <FlexBtn>
                     <Button>Edit cover photo
                         <img className='button-img' src={buttonSvg} alt="gallery" />
                         <img className='button-img__frame' src={frame} alt="frame" />
                     </Button>
-          
+            
                     <EditButton>Edit profile 
                         <img className='button-img' src={buttonSvgEdit} alt="pencil" />
                         <img className='button-img__shape' src={shape} alt="shape" />
                     </EditButton>
-          
+            
                 </FlexBtn>
                 </Container>
-            </WrapperButton>
-        </div>
+        </WrapperButton>
+   
     )
 }

@@ -5,6 +5,11 @@ export const Container = styled.div`
     max-width: 1120px;
 `
 
+export const ContainerForProfile = styled(Container)`
+    display: flex;
+
+`
+
 
 export const Flex = styled.div`
     display: flex;
@@ -23,4 +28,8 @@ export const Button = styled.button`
     background: transparent;
     color: white;
 
+`
+
+export const FlexBox = styled(Flex)`
+justify-content: space-between;
 `

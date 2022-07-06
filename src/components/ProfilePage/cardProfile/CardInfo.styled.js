@@ -60,7 +60,7 @@ export const StyledCardInfo = styled.div`
         padding-bottom: 48px;
         border-bottom: 1px solid #E6E8EC; min-width: 190px;
         padding: 0 0px 48px 36px;
-        background-color: #fff;
+        background: #FCFCFD;
         
     }
 
