@@ -4,6 +4,7 @@ import PrevArrow from './Images/PrevArrow.png'
 import NextArrow from './Images/NextArrov.png'
 import Sellers from "./Sellers/Sellers.jsx";
 import { useState } from "react";
+import SellersSortBlock from "./SellersSort/SellersSortBlock.jsx";
 
 
 const PopularSellers = () => {
@@ -33,7 +34,7 @@ const [offset, setOffset] = useState(232)
             <div className='section-wrapper'>
                 <Container>
                     <div className='popular-sellers__header'>
-
+                        <SellersSortBlock/>
                     </div>
                     <div className='popular-sellers__slider'>
                         <div onClick={swipeSlideLeft} className='arrow prev-arrow'>

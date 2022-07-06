@@ -35,4 +35,10 @@ export const PopularSellersBlock = styled.section`
         transform: rotate(180deg);
     }
 
+    .popular-sellers__header {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 64px;
+    }
+
 `
