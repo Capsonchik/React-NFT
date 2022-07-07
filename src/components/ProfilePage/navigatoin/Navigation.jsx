@@ -1,7 +1,5 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
-import { Component1 } from "../collectionProduct/Component1"
-import { Component2 } from "../collectionProduct/Component2"
 import { StyledNavigation } from "./Navigation.styled"
 
 

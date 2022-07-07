@@ -1,0 +1,25 @@
+[{
+    "img": "http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/b62d2507d6fd836.png",
+    "price": "0.08",
+    "day": "2",
+    "id" : 0
+} ,
+{
+    "img": "http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/00e084a8e6142c8.png",
+    "price": "0.08",
+    "day": "3",
+    "id" : 1
+} ,
+{
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSetVcvWAMDjc8QDcJ03le-BuZEQtZZbJ4QA&usqp=CAU",
+    "price": "0.08",
+    "day": "4",
+    "id" : 2
+} ,
+{
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FhvrFyKC3VezL0tyngplysfB0N2idQky4w&usqp=CAU",
+    "price": "0.08",
+    "day": "5",
+    "id" : 3
+}
+]
