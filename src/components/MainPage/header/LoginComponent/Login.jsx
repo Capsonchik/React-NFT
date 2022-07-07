@@ -4,7 +4,7 @@ const Login = () => {
     return(
         // <button className={s.uploadWallet}>Добавить кошелек</button>
         <div className={s.loginBlock}>
-            <span>Войти/Регистрация</span>
+            <span>Connect Wallet</span>
         </div>
     )
 }

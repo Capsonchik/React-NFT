@@ -9,10 +9,7 @@ import { useState } from 'react';
 
 
 const Header = () => {
-    // const [showModal, setShowModal] = useState(false)
-    // const hendlerVesibol = ()=> {
-    //     setModal(true)
-    // }
+
     const [showModal, setShowModal] = useState(false)
     const openModal = ()=> {
         setShowModal(!showModal)
@@ -23,11 +20,11 @@ const Header = () => {
             <div className={s.container}>
                 <Logo/>
                 <nav className={s.nav}>
-                    <Link className={s.navLink} to='/'>Магазин</Link>
-                    <Link className={s.navLink} to='/'>Как это работает</Link>
+                    <Link className={s.navLink} to='/'>Discover</Link>
+                    <Link className={s.navLink} to='/'>How it work</Link>
                 </nav>
                 <div className={s.headerInput}>
-                    <input className={s.headerSearch} type="text" placeholder='Поиск'/>
+                    <input className={s.headerSearch} type="text" placeholder='Search'/>
                     <button className={s.searchButton} type='submit'>
                         <img src={search} alt="search"/>
                     </button>
@@ -37,7 +34,7 @@ const Header = () => {
                     <NotificationModal showModal={showModal} setShowModal={setShowModal}/>
                 </button>
                 
-                <button className={s.uploadButton}>Загрузить</button>
+                <button className={s.uploadButton}>Upload</button>
                 <Login/>
             </div>
           
