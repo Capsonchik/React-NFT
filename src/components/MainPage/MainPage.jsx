@@ -1,5 +1,6 @@
 import PopularSellers from "../PopularSellers/PopularSellers.jsx";
 import EconomyBlock from '../EconomyBlock/EconomyBlock.jsx'
+import EarnFreeCrypto from "../EarnFreeCrypto/EarnFreeCrypto.jsx";
 
 const MainPage = () => {
     return(
@@ -7,6 +8,7 @@ const MainPage = () => {
             {/* Здесь контент главной страницы */}
             <EconomyBlock/>
             <PopularSellers/>
+            <EarnFreeCrypto/>
         </div>
     )
 }
