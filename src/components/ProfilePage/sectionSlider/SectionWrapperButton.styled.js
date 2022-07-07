@@ -1,39 +1,25 @@
 import styled from 'styled-components'
+import {Flex} from '../../GlobalStyles/Global.styled'
 
 export const WrapperButton = styled.div`
-    
-    .button-wrapper {
-        position: absolute;
-        top: 250px;
-        right: 320px;
-
-        &__edit {
-            position: absolute;
-            top: 250px;
-            right: 171px;
-            display: flex;
-        }
-    }
-
     .button-img {
         padding-left: 12px;
+
+        &__shape {
+        margin-left: -12px;
+        margin-bottom: -2px;
+        }
+
+        &__frame {
+        margin-left: -13px;
+        margin-bottom: -2px;
+        } 
     }
+`
 
-    .button-img__shape {
-        position: absolute;
-        top: 28px;
-        right: 19px;
-    }
-
-    .button-img__frame {
-        position: absolute;
-        top: 15px;
-        right: 17px;
-    } 
-
-    
-
-
-
-    
+export const FlexBtn = styled(Flex)`
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 23px;
+    height: 320px;
 `
