@@ -1,12 +1,14 @@
+// import Signin from '../../../Signin/Signin';
 import s from './Login.module.css'
+import {Link} from "react-router-dom";
 
 const Login = () => {
-    return(
+  return (
         // <button className={s.uploadWallet}>Добавить кошелек</button>
-        <div className={s.loginBlock}>
-            <span>Войти/Регистрация</span>
-        </div>
-    )
+    <Link to='/signin'>
+        <button type='button'  className={s.loginBlock} >Войти / Регистрация</button>
+    </Link>
+  )
 }
 
 export default Login;
