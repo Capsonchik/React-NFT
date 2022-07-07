@@ -1,3 +1,7 @@
+footer {
+    padding-top: 82px;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1120px;
@@ -86,4 +90,6 @@ h3 {
 .copirightText {
     font-weight: 400;
     font-size: 12px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
