@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import StyledCreatorNetwork from './CreatorNetwork.styled'
 import { Container } from '../GlobalStyle/Styled.Global'
 
@@ -6,6 +7,16 @@ import eth from './img/eth.png'
 import userMini from './img/user-mini-foto-1.png'
 
 const CreatorNetwork = () => {
+
+  const [hours, setHours] = useState()
+  const [minutes, setMinutes] = useState()
+  const [seconds, setSeconds] = useState()
+
+  setInterval(() => {
+      setHours(23 - new Date().getHours())
+      setMinutes(59 - new Date().getMinutes())
+      setSeconds(59 - new Date().getSeconds())
+  }, 1000)
 
   return (
     <Container>
@@ -48,17 +59,17 @@ const CreatorNetwork = () => {
               <div className='creator-current-bid__block-time'>
 
                 <div className='creator-current-bid__auction-ending'>
-                  <p className='creator-current-bid__time'>19</p>
+                  <p className='creator-current-bid__time'>{hours}</p>
                   <p className='creator-current-bid__time-text'>Hrs</p>
                 </div>
 
                 <div className='creator-current-bid__auction-ending'>
-                  <p className='creator-current-bid__time'>24</p>
+                  <p className='creator-current-bid__time'>{minutes}</p>
                   <p className='creator-current-bid__time-text'>mins</p>
                 </div>
 
                 <div className='creator-current-bid__auction-ending'>
-                  <p className='creator-current-bid__time'>19</p>
+                  <p className='creator-current-bid__time'>{seconds}</p>
                   <p className='creator-current-bid__time-text'>secs</p>
                 </div>
 
