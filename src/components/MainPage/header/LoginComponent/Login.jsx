@@ -6,7 +6,7 @@ const Login = () => {
   return (
         // <button className={s.uploadWallet}>Добавить кошелек</button>
     <Link to='/signin'>
-        <button type='button'  className={s.loginBlock} >Войти / Регистрация</button>
+        <button type='button'  className={s.loginBlock} >Connect Wallet</button>
     </Link>
   )
 }
