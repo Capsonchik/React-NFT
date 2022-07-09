@@ -7,6 +7,7 @@ import {Routes, Route} from "react-router-dom";
 import {BrowserRouter} from "react-router-dom";
 import MainPage from './components/MainPage/MainPage';
 import Signin from './components/Signin/Signin';
+import Signup from './components/Signup/Signup';
 import { ProfilePage } from './components/ProfilePage/ProfilePage';
 import { Component1 } from './components/ProfilePage/collectionProduct/Component1';
 import { Component2 } from './components/ProfilePage/collectionProduct/Component2';
@@ -19,6 +20,8 @@ root.render(
         <Route path='/' element={<App />}>
           <Route path='/' element={<MainPage />}/>
           <Route path='/signin' element={<Signin />}/>
+          <Route path='/signup' element={<Signup />}/>
+          <Route path='/profile' element={<ProfilePage />}/>
           <Route path='/profile' element={<ProfilePage />}>
             <Route path='/profile' element={<Component1 />}/>
             <Route path='/profile/collectibles' element={<Component2 />}/>

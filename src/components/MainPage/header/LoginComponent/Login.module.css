@@ -1,7 +1,4 @@
 .loginBlock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 145px;
     height: 40px;
     border: 2px solid #E6E8EC;
