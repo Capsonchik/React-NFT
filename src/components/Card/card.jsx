@@ -1,7 +1,6 @@
 import { CardStyled } from "./card.styled";
 
 const Card = ({data}) => {
-    console.log(data)
     return ( 
         <CardStyled>
             <img src={data.img} alt="main-photo" />
