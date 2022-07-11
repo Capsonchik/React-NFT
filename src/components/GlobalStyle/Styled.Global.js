@@ -10,3 +10,10 @@ export const FlexBox = styled.div`
     justify-content: center;
     align-items: center;
 `
+
+export const Header = styled.h2`
+    font-weight: 700;
+    font-size: 40px;
+    color: #23262F;
+    margin-bottom: 64px;
+`
