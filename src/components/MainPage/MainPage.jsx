@@ -10,8 +10,8 @@ const MainPage = () => {
     return(
         <div>
             {/* Здесь контент главной страницы */}
-            <CreatorNetwork/>
             <EconomyBlock/>
+            <CreatorNetwork/>
             <PopularSellers/>
             <HotBid/>
             <HotCollection/>
