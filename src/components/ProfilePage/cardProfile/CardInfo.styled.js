@@ -97,5 +97,10 @@ export const BtnSocial = styled.button`
     margin: 0 10px;
     background-color: #fff;
     cursor: pointer;
+
+    :hover {
+        transform: scale(1.2);
+    }
+    
 `
 

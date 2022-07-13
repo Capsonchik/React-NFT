@@ -11,6 +11,17 @@ export const Button = styled.button`
     font-family: 'DM Sans';	
     background: transparent;
     color: white;
+    cursor: pointer;
+
+    transition: 1s linear;
+
+    :hover {
+        color: #fff;
+        background: #3059c7;
+        border: 2px solid transparent;
+    
+    }
+
 
     .button-text {
         padding-right: 3px;

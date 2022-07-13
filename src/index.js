@@ -9,8 +9,8 @@ import MainPage from './components/MainPage/MainPage';
 import Signin from './components/Signin/Signin';
 import Signup from './components/Signup/Signup';
 import { ProfilePage } from './components/ProfilePage/ProfilePage';
-import { Component1 } from './components/ProfilePage/collectionProduct/Component1';
-import { Component2 } from './components/ProfilePage/collectionProduct/Component2';
+import { CollectionProduct } from './components/ProfilePage/collectionProduct/collectionProduct';
+import { NotFoundPage } from './pages/notFoundPage/notFoundPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,13 +23,14 @@ root.render(
           <Route path='/signup' element={<Signup />}/>
           <Route path='/profile' element={<ProfilePage />}/>
           <Route path='/profile' element={<ProfilePage />}>
-            <Route path='/profile' element={<Component1 />}/>
-            <Route path='/profile/collectibles' element={<Component2 />}/>
-            <Route path='/profile/created' element={<Component2 />}/>
-            <Route path='/profile/following' element={<Component2 />}/>
-            <Route path='/profile/followers' element={<Component2 />}/>
+            <Route path='/profile' element={<CollectionProduct />}/>
+            <Route path='/profile/collectibles' element={<CollectionProduct />}/>
+            <Route path='/profile/created' element={<CollectionProduct />}/>
+            <Route path='/profile/following' element={<CollectionProduct />}/>
+            <Route path='/profile/followers' element={<CollectionProduct />}/>
           </Route>
         </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
