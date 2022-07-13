@@ -16,6 +16,12 @@ export const SellersBlock = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        :hover {
+            transition: all 0.7s;
+            height: 263px;
+            box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+        }
     }
 
     .user__top {
