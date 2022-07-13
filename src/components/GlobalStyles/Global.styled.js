@@ -5,9 +5,14 @@ export const Container = styled.div`
     max-width: 1120px;
 `
 
-export const ContainerForProfile = styled(Container)`
+export const ContainerFlex = styled(Container)`
     display: flex;
 
+`
+
+export const ContainerFlexColumn = styled(Container)`
+    display: flex;
+    flex-direction: column;
 `
 
 

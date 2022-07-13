@@ -1,8 +1,9 @@
 import {CardProfile } from './cardProfile/CardProfile'
 import { Navigation } from './navigatoin/Navigation'
 import { StyledProfilePage } from "./ProfilePage.styled"
-import {ContainerForProfile} from '../GlobalStyles/Global.styled'
+import {ContainerFlex, ContainerFlexColumn} from '../GlobalStyles/Global.styled'
 import { SectionSlider } from "./sectionSlider/SectionSlider"
+import { CollectionProduct } from './collectionProduct/collectionProduct'
 
 
 
@@ -11,10 +12,14 @@ export const ProfilePage = () => {
     return(
         <StyledProfilePage>
            <SectionSlider />
-            <ContainerForProfile>
+            <ContainerFlex>
                 <CardProfile />
-                <Navigation />
-            </ContainerForProfile> 
+                <ContainerFlexColumn>
+                    <Navigation />
+                    <CollectionProduct/>
+                </ContainerFlexColumn>
+         
+            </ContainerFlex> 
         </StyledProfilePage>
     )
 }

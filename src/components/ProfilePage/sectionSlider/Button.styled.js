@@ -11,6 +11,7 @@ export const Button = styled.button`
     font-family: 'DM Sans';	
     background: transparent;
     color: white;
+    cursor: pointer;
 
     .button-text {
         padding-right: 3px;

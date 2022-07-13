@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNavigation = styled.div`
-  padding: 60px 0 30px 64px;
+  padding: 60px 0 50px 64px;
 
     .nav-link-active {
         font-weight: 700;
