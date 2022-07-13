@@ -27,5 +27,19 @@ export const Cards = [
         price: 15.015,
         value: 'ETH'
     },
+    {
+        id: 5,
+        img: 'img/cardPhoto/card5.png',
+        cardName: 'Amazing digital art',
+        price: 15.015,
+        value: 'ETH'
+    },
+    {
+        id: 6,
+        img: 'img/cardPhoto/card6.png',
+        cardName: 'Amazing digital art',
+        price: 15.015,
+        value: 'ETH'
+    },
     
 ]

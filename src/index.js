@@ -9,8 +9,8 @@ import MainPage from './components/MainPage/MainPage';
 import Signin from './components/Signin/Signin';
 import Signup from './components/Signup/Signup';
 import { ProfilePage } from './components/ProfilePage/ProfilePage';
-import { Component1 } from './components/ProfilePage/collectionProduct/Component1';
-import { Component2 } from './components/ProfilePage/collectionProduct/Component2';
+import { CollectionProduct } from './components/ProfilePage/collectionProduct/collectionProduct';
+import { NotFoundPage } from './pages/notFoundPage/notFoundPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,24 +19,25 @@ root.render(
       <Routes>
         <Route path='/' element={<App />}>
           <Route path='/' element={<MainPage />}>
-            <Route path='/allitems' element={<Component2 />}/>
-            <Route path='/art' element={<Component2 />}/>
-            <Route path='/game' element={<Component2 />}/>
-            <Route path='/photography' element={<Component2 />}/>
-            <Route path='/music' element={<Component2 />}/>
-            <Route path='/video' element={<Component2 />}/>
+            <Route path='/allitems' />
+            <Route path='/art' />
+            <Route path='/game'/>
+            <Route path='/photography'/>
+            <Route path='/music'/>
+            <Route path='/video'/>
           </Route>
           <Route path='/signin' element={<Signin />}/>
           <Route path='/signup' element={<Signup />}/>
           <Route path='/profile' element={<ProfilePage />}/>
           <Route path='/profile' element={<ProfilePage />}>
-            <Route path='/profile' element={<Component1 />}/>
-            <Route path='/profile/collectibles' element={<Component2 />}/>
-            <Route path='/profile/created' element={<Component2 />}/>
-            <Route path='/profile/following' element={<Component2 />}/>
-            <Route path='/profile/followers' element={<Component2 />}/>
+            <Route path='/profile' element={<CollectionProduct />}/>
+            <Route path='/profile/collectibles' element={<CollectionProduct />}/>
+            <Route path='/profile/created' element={<CollectionProduct />}/>
+            <Route path='/profile/following' element={<CollectionProduct />}/>
+            <Route path='/profile/followers' element={<CollectionProduct />}/>
           </Route>
         </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

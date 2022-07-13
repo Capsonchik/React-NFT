@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Footer from "./components/MainPage/Footer/footer";
 import Header from "./components/MainPage/header/Header";
-import {useRef} from 'react'
 
 
 // ШАБЛОН СТРАНИЦЫ ,kf ,kf ,kf

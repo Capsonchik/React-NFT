@@ -11,7 +11,10 @@ import twitter from "../ImagesProfile/card-twitter-btn.svg"
 import instagram from "../ImagesProfile/card-instagram-btn.svg"
 import facebook from "../ImagesProfile/card-facebook-btn.svg" 
 
+
+
 export const CardProfile = () => {
+
     return(
         <div>
         <StyledCardProfile>
