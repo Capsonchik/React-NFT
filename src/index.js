@@ -9,8 +9,7 @@ import MainPage from './components/MainPage/MainPage';
 import Signin from './components/Signin/Signin';
 import Signup from './components/Signup/Signup';
 import { ProfilePage } from './components/ProfilePage/ProfilePage';
-import { CollectionProduct, Component1 } from './components/ProfilePage/collectionProduct/collectionProduct';
-import { Component2 } from './components/ProfilePage/collectionProduct/Component2';
+import { CollectionProduct } from './components/ProfilePage/collectionProduct/collectionProduct';
 import { NotFoundPage } from './pages/notFoundPage/notFoundPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,8 +29,6 @@ root.render(
             <Route path='/profile/following' element={<CollectionProduct />}/>
             <Route path='/profile/followers' element={<CollectionProduct />}/>
           </Route>
-
-        
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
