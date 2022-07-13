@@ -1,7 +1,6 @@
 import { PopularSellersBlock } from "./PopularSellers.styled.js";
 import { Container } from "../GlobalStyle/Styled.Global";
 import PrevArrow from './Images/PrevArrow.png'
-import NextArrow from './Images/NextArrov.png'
 import Sellers from "./Sellers/Sellers.jsx";
 import { useState } from "react";
 import SellersSortBlock from "./SellersSort/SellersSortBlock.jsx";
