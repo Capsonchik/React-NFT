@@ -4,12 +4,14 @@ import Card from "../Card/card";
 import {Cards} from "../State/Cards.js"
 
 const HotBid = () => {
-    const mapCards = Cards.map(el => {
-        return (
-            <div key={el.id} className="card">
-                <Card data={el}/>
-            </div>
-        )
+    const mapCards = Cards.map((el, i) => {
+        for(; i > 1;){
+            return (
+                <div key={el.id} className="card">
+                    <Card data={el}/>
+                </div>
+            )
+        }
     })
 
 
