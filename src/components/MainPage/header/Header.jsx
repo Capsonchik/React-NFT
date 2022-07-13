@@ -1,4 +1,4 @@
-import s from './Header.module.css';
+
 import search from '../../Images/Shape.png';
 import bell from '../../Images/Bell.png';
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import Logo from './LogoComponent/Logo';
 import { NotificationModal } from './NotificationModal/NotificationModal';
 import { useState } from 'react';
 import { HeaderStyled, HeaderFlexContainer } from './header.styled';
-import { Container } from '../../GlobalStyles/Global.styled';
+
 
 
 const Header = () => {
