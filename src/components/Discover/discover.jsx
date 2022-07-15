@@ -19,12 +19,14 @@ const Discover = () => {
         setActiveLink(false)
     }
 
-    const mapCards = Cards.map(el => {
-        return (
-            <div key={el.id} className="card">
-                <Card data={el}/>
-            </div>
-        )
+    const mapCards = Cards.map((el, i) => {
+        for(; i > 1;){
+            return (
+                <div key={el.id} className="card">
+                    <Card data={el}/>
+                </div>
+            )
+        }
     })
 
 

@@ -5,6 +5,8 @@ export const CardStyled = styled.div`
 
     & img {
         width: 100%;
+        border-radius: 16px;
+        height: 303px;
     }
 
     .name-and-price {
