@@ -5,7 +5,7 @@ import sale from '../../../State/sale.json'
 
 
 
-export const NotificationModal = ({showModal, setShowModal}) => {
+export const NotificationModal = ({showModal}) => {
     const data = sale.map(el => {
       return(
         <div className="products-card">

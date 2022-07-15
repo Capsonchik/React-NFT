@@ -3,7 +3,8 @@ import { Navigation } from './navigatoin/Navigation'
 import { StyledProfilePage } from "./ProfilePage.styled"
 import {ContainerFlex, ContainerFlexColumn} from '../GlobalStyles/Global.styled'
 import { SectionSlider } from "./sectionSlider/SectionSlider"
-import { CollectionProduct } from './collectionProduct/collectionProduct'
+import { CollectionCardOnSale } from './collectionProduct/collectionCardOnSale'
+import { CollectionCardCollectibles } from './collectionProduct/collectionCardCollectibles'
 
 
 
@@ -16,7 +17,7 @@ export const ProfilePage = () => {
                 <CardProfile />
                 <ContainerFlexColumn>
                     <Navigation />
-                    <CollectionProduct/>
+                    <CollectionCardOnSale/>
                 </ContainerFlexColumn>
          
             </ContainerFlex> 
