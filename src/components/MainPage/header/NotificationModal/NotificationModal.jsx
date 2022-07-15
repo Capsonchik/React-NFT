@@ -25,12 +25,16 @@ export const NotificationModal = ({showModal}) => {
 
     return(
         <StyledNotificationModal >
-            {<div className={showModal ? 'modal-popup-active' : 'modal-popup'}>
-                <div className="header-modal">
-                    <span>Notification</span>
-                    <BtnModal>See all</BtnModal>
-                </div>
-                {data}
+             
+            {<div className={showModal ? 'modal-popup-active block' : 'modal-popup'}>
+               
+                    <div className="header-modal">
+                        <span>Notification</span>
+                        <BtnModal>See all</BtnModal>
+                    </div>
+                    {data}
+                
+      
             </div>}
         </StyledNotificationModal>
 
