@@ -21,6 +21,7 @@ export const StyledEconomyBlock = styled.section`
     }
 
     .economy-button {
+        cursor: pointer;
         width: 180px;
         height: 48px;
         border: 2px solid #E6E8EC;

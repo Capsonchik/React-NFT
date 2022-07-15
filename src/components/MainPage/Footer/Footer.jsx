@@ -1,48 +1,49 @@
-import s from './Footer.module.css'
 import { Link } from "react-router-dom";
 import Logo from '../header/LogoComponent/Logo.jsx'
 import circle from '../../Images/footer-button.png'
+import { FooterStyled, ContainerFlex } from './footer.styled';
+
 
 const Footer = () => {
     return(
-        <footer>
-            <div className={s.container}>
-                <div className={s.footerLogo}>
+        <FooterStyled>
+            <ContainerFlex>       
+                <div className="footer-logo">
                     <Logo/>
-                    <p>Новая Креативная экономика.</p>
+                    <p>The New Creative Economy.</p>
                 </div>
-                <nav className={s.footerNav}>
+                <nav className="footer-nav">
                     <h3>Crypter.</h3>
-                    <Link className={s.footerLink} to='/'>Магазин</Link>
-                    <Link className={s.footerLink}  to='/'>Добавить кошелек</Link>
-                    <Link className={s.footerLink}  to='/'>Добавить товар</Link>
+                    <Link className="footer-link" to='/'>Discover</Link>
+                    <Link className="footer-link"  to='/'>Connect wallet</Link>
+                    <Link className="footer-link"  to='/'>Create item</Link>
                 </nav>
-                <nav className={s.footerNav}>
-                    <h3>Информация</h3>
-                    <Link className={s.footerLink}  to='/'>Загрузить</Link>
-                    <Link className={s.footerLink}  to='/'>Демо</Link>
-                    <Link className={s.footerLink}  to='/'>Поддержка</Link>
+                <nav className="footer-nav">
+                    <h3>Info</h3>
+                    <Link className="footer-link"  to='/'>Download</Link>
+                    <Link className="footer-link"  to='/'>Demos</Link>
+                    <Link className="footer-link"  to='/'>Support</Link>
                 </nav>
-                <div className={s.footerNews}>
-                    <h3>Подписка на новости</h3>
-                    <p>Подпишитесь на нашу рассылку новостей, чтобы получить больше бесплатных курсов и ресурсов по дизайну</p>
-                    <div className={s.footerInput}>
-                        <input type="text" placeholder='Введите Email' />
-                        <button className={s.footerBtn}>
+                <div className="footer-news">
+                    <h3>Join Newslatter</h3>
+                    <p>Subscribe our newsletter to get more free design course and resource</p>
+                    <div className="footer-input">
+                        <input type="text" placeholder='Enter your email' />
+                        <button className="footer-btn">
                             <img src={circle} alt="button" />
                         </button>
                     </div>
                 </div>
-            </div>
-            <div className={s.copiright}>
-                <div className={s.copirightText}>
+                </ContainerFlex>
+            <div className="copiright">
+                <div className="copiright-text">
                     <p>Copyright © 2021 UI8 LLC. All rights reserved</p>
                 </div>
-                <div className={s.copirightText}>
+                <div className="copiright-text">
                     <p>We use cookies for better service.</p>
                 </div>
             </div>
-        </footer>
+        </FooterStyled>
     )
 }
 

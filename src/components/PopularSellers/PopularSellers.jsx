@@ -1,7 +1,6 @@
 import { PopularSellersBlock } from "./PopularSellers.styled.js";
 import { Container } from "../GlobalStyle/Styled.Global";
 import PrevArrow from './Images/PrevArrow.png'
-import NextArrow from './Images/NextArrov.png'
 import Sellers from "./Sellers/Sellers.jsx";
 import { useState } from "react";
 import SellersSortBlock from "./SellersSort/SellersSortBlock.jsx";
@@ -34,7 +33,7 @@ const [offset, setOffset] = useState(232)
             <div className='section-wrapper'>
                 <Container>
                     <div className='popular-sellers__header'>
-                        <SellersSortBlock/>
+                        <SellersSortBlock />
                     </div>
                     <div className='popular-sellers__slider'>
                         <div onClick={swipeSlideLeft} className='arrow prev-arrow'>
@@ -42,15 +41,13 @@ const [offset, setOffset] = useState(232)
                         </div>
                         <div className='popular-sellers__slider-block'>
                             <div className='slider-wrapper'>
-                            <Sellers/>
+                                <Sellers />
                             </div>
-                            
                         </div>
                         <div onClick={swipeSlideRight} className='arrow next-arrow'>
-                            <img src={PrevArrow} alt="prev-arrov" />
-                            {/* <img src={NextArrow} alt="next-arrov" /> */}
+                            <img src={PrevArrow} alt="prev-arrow" />
                         </div>
-                    </div>                                           
+                    </div>
                 </Container>
             </div>
         </PopularSellersBlock>
