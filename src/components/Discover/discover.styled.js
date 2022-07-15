@@ -13,6 +13,7 @@ export const DiscoverStyled = styled.section`
     }
 
     .discover-nav-block__added {
+        cursor: pointer;
         width: 20%;
         height: 46px;
         border: 2px solid #E6E8EC;
@@ -60,6 +61,7 @@ export const DiscoverStyled = styled.section`
   }
 
   .discover-nav-block__btn {
+    cursor: pointer;
     width: 13%;
     height: 48px;
     border-radius: 90px;
@@ -83,6 +85,7 @@ export const DiscoverStyled = styled.section`
   }
 
   .discover-sort-block__item {
+    cursor: pointer;
     width: 23%;
     height: 48px;
     border: 2px solid #E6E8EC;
