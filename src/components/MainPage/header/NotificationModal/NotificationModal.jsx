@@ -8,7 +8,7 @@ import sale from '../../../State/sale.json'
 export const NotificationModal = ({showModal}) => {
     const data = sale.map(el => {
       return(
-        <div className="products-card">
+        <div key={el.id} className="products-card">
             <div className="info-card">
                 <img className="img" src={el.img} alt="cardModalOne" />
                 <div className="modal-text">
