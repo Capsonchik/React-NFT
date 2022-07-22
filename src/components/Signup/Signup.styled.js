@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import StyledSignin from '../Signin/Signin.styled'
 
-const styledSignup = styled(StyledSignin)
-`
+const styledSignup = styled(StyledSignin)`
 .popup__checkbox-block {
   width: 384px;
 }

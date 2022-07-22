@@ -5,10 +5,10 @@ import sale from '../../../State/sale.json'
 
 
 
-export const NotificationModal = ({showModal, setShowModal}) => {
+export const NotificationModal = ({showModal}) => {
     const data = sale.map(el => {
       return(
-        <div className="products-card">
+        <div key={el.id} className="products-card">
             <div className="info-card">
                 <img className="img" src={el.img} alt="cardModalOne" />
                 <div className="modal-text">
@@ -25,12 +25,16 @@ export const NotificationModal = ({showModal, setShowModal}) => {
 
     return(
         <StyledNotificationModal >
-            {<div className={showModal ? 'modal-popup-active' : 'modal-popup'}>
-                <div className="header-modal">
-                    <span>Notification</span>
-                    <BtnModal>See all</BtnModal>
-                </div>
-                {data}
+             
+            {<div className={showModal ? 'modal-popup-active block' : 'modal-popup'}>
+               
+                    <div className="header-modal">
+                        <span>Notification</span>
+                        <BtnModal>See all</BtnModal>
+                    </div>
+                    {data}
+                
+      
             </div>}
         </StyledNotificationModal>
 

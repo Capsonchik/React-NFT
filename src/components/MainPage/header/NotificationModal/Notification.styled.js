@@ -3,23 +3,39 @@ import {BtnCard} from '../../../ProfilePage/cardProfile/CardInfo.styled'
 
 
 export const StyledNotificationModal = styled.div`
-    ::before {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 64px;
-        background-image:url(./modalImg/Vector-for-modal.png)  no-repeat;
+.block {
+    /* background: green;
+    border-radius: 10px; */
+    position: relative;
+    color: #fff;
+   }
+   .block::after {
+    content: '';
+    position: absolute;
+    color: green;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: inherit;
+    border: inherit;
+    position: absolute;
+    top: -9px;
 
-    }
+    left: calc(50% - 10px);
+    -webkit-clip-path: polygon(0% 0%,100% 100%,0% 100%);
+    clip-path: polygon(0% 0%,100% 100%,0% 100%);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(135deg);
+    border-radius: 0 0 0 0.35em;
+   }
 
 
     .modal-popup-active {
         opacity: 1;
         display: block;
         width: 396px;
-        height: 528px;
+        height: 502px;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -29,9 +45,8 @@ export const StyledNotificationModal = styled.div`
         padding: 40px 32px 0 32px;
         z-index: 2;
         position: absolute;
-        right: -194px;
-        /* top: 93px; */
-        top: 67px;
+        right: -184px;
+        top: 98px;
         transition: 0.8s ease;
     }
 
