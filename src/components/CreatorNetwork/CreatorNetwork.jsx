@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import StyledCreatorNetwork from './CreatorNetwork.styled'
 import { Container } from '../GlobalStyle/Styled.Global'
 
@@ -6,11 +6,17 @@ import imgNft from './img/img-nft-1.jpg'
 import eth from './img/eth.png'
 import userMini from './img/user-mini-foto-1.png'
 
+
 const CreatorNetwork = () => {
 
   const [hours, setHours] = useState()
   const [minutes, setMinutes] = useState()
   const [seconds, setSeconds] = useState()
+  const [course, setCourse] = useState({course:1595.1, crypto: 1.01, value: 0})
+
+  useEffect(() => {
+    setCourse({value:( course.course * course.crypto), course:1595.1, crypto: 1.01})
+  }, [])
 
   setInterval(() => {
       setHours(23 - new Date().getHours())
@@ -52,8 +58,8 @@ const CreatorNetwork = () => {
 
             <div className='creator-current-bid'>
               <h4 className='creator-current-bid__text'>Current Bid</h4>
-              <h3 className='creator-current-bid__price-eth'>1.00 ETH</h3>
-              <p className='creator-current-bid__price-dolar'>$3,618.36</p>
+              <h3 className='creator-current-bid__price-eth'>{course.crypto} ETH</h3>
+              <p className='creator-current-bid__price-dolar'>${course.value}</p>
               <h4 className='creator-current-bid__text'>Auction ending in</h4>
 
               <div className='creator-current-bid__block-time'>

@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     max-width: 1120px;
     margin: 0 auto;
+    margin-right: 15px;
+    margin-left: 15px;
 `
 
 export const FlexBox = styled.div`
