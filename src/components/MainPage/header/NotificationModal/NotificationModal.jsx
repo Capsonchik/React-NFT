@@ -1,5 +1,5 @@
 import { BtnModal, StyledNotificationModal } from "./Notification.styled"
-import dot from "./modalImg/modalBlueDot.png"
+import dot from "./img/modalBlueDot.png"
 import sale from '../../../State/sale.json'
 
 
