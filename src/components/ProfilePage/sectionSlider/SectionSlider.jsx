@@ -7,6 +7,7 @@ import { WrapperButton } from './SectionWrapperButton.styled'
 import { Container } from '../../GlobalStyles/Global.styled'
 import { FlexBtn } from '../sectionSlider/SectionWrapperButton.styled'
 import { Link } from 'react-router-dom'
+import { ButtonBack } from '../../editProfile/btnBackToProfile'
 
 
 export const SectionSlider = () => {
@@ -14,10 +15,10 @@ export const SectionSlider = () => {
         <WrapperButton>
             <Container>
                 <FlexBtn>
-                    <Button>Edit cover photo
+                    <ButtonBack>Edit cover photo
                         <img className='button-img' src={buttonSvg} alt="gallery" />
                         <img className='button-img__frame' src={frame} alt="frame" />
-                    </Button>
+                    </ButtonBack>
             
                     <EditButton>
                         <Link className='button-text' to='/profile/edit'>Edit profile 
