@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import StyledCreatorNetwork from './CreatorNetwork.styled'
 import { Container } from '../GlobalStyle/Styled.Global'
+import StyledGlobal from '../GlobalStyle/Styled.Global'
 
 import imgNft from './img/img-nft-1.jpg'
 import eth from './img/eth.png'
@@ -27,7 +28,7 @@ const CreatorNetwork = () => {
   return (
     <Container>
       <StyledCreatorNetwork>
-        <div className='creator-network'>
+        <div className='creator-network '>
           <img className='creator-network__img' src={imgNft} alt="nft"/>
           <div className='creator-network__block-info'>
 
