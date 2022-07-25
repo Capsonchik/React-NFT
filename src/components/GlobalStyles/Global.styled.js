@@ -36,5 +36,6 @@ export const Button = styled.button`
 `
 
 export const FlexBox = styled(Flex)`
+display: flex;
 justify-content: space-between;
 `
