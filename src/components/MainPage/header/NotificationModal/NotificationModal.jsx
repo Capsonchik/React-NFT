@@ -1,5 +1,4 @@
 import { BtnModal, StyledNotificationModal } from "./Notification.styled"
-import dot from "./modalImg/modalBlueDot.png"
 import sale from '../../../State/sale.json'
 
 
@@ -17,7 +16,7 @@ export const NotificationModal = ({showModal}) => {
                     <span>{el.day} days ago</span>
                 </div>
             </div>
-            <img src={dot} alt="dot" />
+            <img src="/img/modalImgSmall/modalBlueDot.png" alt="dot" />
         </div>
         )
     })
