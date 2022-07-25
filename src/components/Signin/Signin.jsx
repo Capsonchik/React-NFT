@@ -27,7 +27,7 @@ const Signin = () => {
           <Link to='/'>
             <div className="popup__cross"></div>
             </Link>
-          <h2 className="popup__title">Вход</h2>
+          <h2 className="popup__title">Log in</h2>
           <form
             name='signin'
             action="#"
@@ -41,17 +41,17 @@ const Signin = () => {
               className='popup__input'
               minlength="5"
               maxlength="40"
-              placeholder='email'/>
+              placeholder='Email'/>
             <input
               type='password'
               className='popup__input'
               minlength="4"
               maxlength="30"
-              placeholder='password' />
+              placeholder='Password' />
             <Link to='/profile'>
-              <button type="submit" className="popup__submit">Войти</button>
+              <button type="submit" className="popup__submit">Log in</button>
             </Link>
-            <Link to='/signup' className='popup__link'>Зарегистрироваться</Link>
+            <Link to='/signup' className='popup__link'>Sign up</Link>
           </form>
         </div>
       </div>

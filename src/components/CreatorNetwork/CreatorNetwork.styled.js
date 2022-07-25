@@ -5,9 +5,10 @@ const styledCreatorNetwork = styled.div`
   padding-top: 128px;
   display: flex;
   gap: 128px;
+  padding-bottom: 140px;
 
 &__img {
-  max-width: 640px;
+  width: 64%;
   border-radius: 20px;
 }
 
@@ -37,6 +38,8 @@ const styledCreatorNetwork = styled.div`
 }
 
 &__img {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -62,7 +65,8 @@ const styledCreatorNetwork = styled.div`
 
 .creator-current-bid {
   margin-top: 40px;
-  width: 352px;
+
+  width: 100%;
   height: 296px;
   border: 2px solid #E6E8EC;
   box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
@@ -104,6 +108,7 @@ const styledCreatorNetwork = styled.div`
   height: 64px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 8px;
 }
 
@@ -126,7 +131,7 @@ const styledCreatorNetwork = styled.div`
 
 &__place-bid {
   margin-top: 40px;
-  width: 352px;
+  width: 100%;
   height: 48px;
   background: #3772FF;
   border-radius: 90px;
@@ -146,13 +151,14 @@ const styledCreatorNetwork = styled.div`
 
 &__view-item {
   margin-top: 10px;
-  width: 352px;
+  width: 100%;
   height: 48px;
   border-radius: 90px;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
-  border: 2px solid rgba(22%, 45%, 100%, 0.25);
+  background-color: #fff;
+  border: 2px solid rgba(22%, 45%, 100%, 0.15);
   transition: transform .3s, box-shadow .3s;
   cursor: pointer;
 }
