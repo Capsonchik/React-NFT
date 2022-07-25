@@ -11,6 +11,7 @@ import Signup from './components/Signup/Signup';
 import { ProfilePage } from './components/ProfilePage/ProfilePage';
 import { CollectionCardOnSale, CollectionProduct } from './components/ProfilePage/collectionProduct/collectionCardOnSale';
 import { NotFoundPage } from './pages/notFoundPage/notFoundPage';
+import { EditProfile } from './components/editProfile/Edit.Profile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,14 +22,17 @@ root.render(
           <Route path='/' element={<MainPage />}/>
           <Route path='/signin' element={<Signin />}/>
           <Route path='/signup' element={<Signup />}/>
-          <Route path='/profile' element={<ProfilePage />}/>
+          {/* <Route path='/profile' element={<ProfilePage />}/> */}
+          
           <Route path='/profile' element={<ProfilePage />}>
             <Route path='/profile/' element={<CollectionCardOnSale />}/>
+          
             <Route path='/profile/collectibles' element={<CollectionCardOnSale />}/>
             <Route path='/profile/created' element={<CollectionCardOnSale />}/>
             <Route path='/profile/following' element={<CollectionCardOnSale />}/>
             <Route path='/profile/followers' element={<CollectionCardOnSale />}/>
           </Route>
+          <Route path='/profile/edit' element={<EditProfile />}/>
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

@@ -25,6 +25,8 @@ export const Button = styled.button`
 
     .button-text {
         padding-right: 3px;
+        text-decoration: none;
+        color: white
     }
 `
 
