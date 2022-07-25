@@ -19,12 +19,14 @@ const Discover = () => {
         setActiveLink(false)
     }
 
-    const mapCards = Cards.map(el => {
-        return (
-            <div key={el.id} className="card">
-                <Card data={el}/>
-            </div>
-        )
+    const mapCards = Cards.map((el, i) => {
+        for(; i > 1;){
+            return (
+                <div key={el.id} className="card">
+                    <Card data={el}/>
+                </div>
+            )
+        }
     })
 
 
@@ -39,12 +41,12 @@ const Discover = () => {
                         <img src="/img/circle-arrow/circle-arrow-down.png" alt="btn-arw-dwn" />
                     </div>
                     <nav className="discover-nav-block__nav">
-                        <NavLink onClick={clickActiveLink} to='/' className={ activeLink ? 'nav-link-active' : 'nav-link'}>All items</NavLink>
-                        <NavLink onClick={clickLink} to='/' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Art</NavLink>
-                        <NavLink onClick={clickLink} to='/' className={({ isActive }) => (isActive ? 'nav-link' : 'nav-link-active')}>Game</NavLink>
-                        <NavLink onClick={clickLink} to='/' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Photograhy</NavLink>
-                        <NavLink onClick={clickLink} to='/' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Music</NavLink>
-                        <NavLink onClick={clickLink} to='/' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Video</NavLink>
+                        <NavLink onClick={clickActiveLink} to='/allitems' className={ activeLink ? 'nav-link-active' : 'nav-link'}>All items</NavLink>
+                        <NavLink onClick={clickLink} to='/art' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Art</NavLink>
+                        <NavLink onClick={clickLink} to='/game' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Game</NavLink>
+                        <NavLink onClick={clickLink} to='/photography' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Photograhy</NavLink>
+                        <NavLink onClick={clickLink} to='/music' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Music</NavLink>
+                        <NavLink onClick={clickLink} to='/video' className={({ isActive }) => (isActive ? 'nav-link-active' : 'nav-link')}>Video</NavLink>
                     </nav>
                     <button className="discover-nav-block__btn">
                         Filter 
@@ -65,7 +67,7 @@ const Discover = () => {
                         <img src="/img/circle-arrow/circle-arrow-down.png" alt="btn-arw-dwn" />
                     </div>
                     <div className="discover-sort-block__item">
-                        <span>Price Ranhe</span>
+                        <span>Price Range</span>
                         <img src="/img/circle-arrow/circle-arrow-down.png" alt="btn-arw-dwn" />
                     </div>
                 </div>

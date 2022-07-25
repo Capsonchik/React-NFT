@@ -25,6 +25,7 @@ export const PopularSellersBlock = styled.section`
     }
 
     .arrow {
+        cursor: pointer;
         width: 5%;
         display: flex;
         justify-content: center;

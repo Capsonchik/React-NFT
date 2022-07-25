@@ -6,12 +6,13 @@ import HotBid from "../HotBid/hotBid.jsx";
 import HotCollection from "../HotCollections/hotCollection.jsx";
 import Discover from "../Discover/discover.jsx";
 
+
 const MainPage = () => {
     return(
         <div>
             {/* Здесь контент главной страницы */}
             <EconomyBlock/>
-            <CreatorNetwork/>
+            <CreatorNetwork />
             <PopularSellers/>
             <HotBid/>
             <HotCollection/>

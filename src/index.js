@@ -19,7 +19,14 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
-          <Route path='/' element={<MainPage />}/>
+          <Route path='/' element={<MainPage />}>
+            <Route path='/allitems' />
+            <Route path='/art' />
+            <Route path='/game'/>
+            <Route path='/photography'/>
+            <Route path='/music'/>
+            <Route path='/video'/>
+          </Route>
           <Route path='/signin' element={<Signin />}/>
           <Route path='/signup' element={<Signup />}/>
           {/* <Route path='/profile' element={<ProfilePage />}/> */}
